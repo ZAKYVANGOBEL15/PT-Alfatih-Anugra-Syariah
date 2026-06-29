@@ -35,7 +35,7 @@ export default function ProductCatalog() {
   });
 
   const handleWhatsAppOrder = (product) => {
-    const waNumber = contact.whatsapp || '6281234567890';
+    const waNumber = contact.whatsapp || '6282131397759';
     const text = `Halo Admin PT Alfatih Anugrah Syariah,\nsaya tertarik dengan produk: *${product.name}* (Kategori: ${product.category}).\nMohon informasi ketersediaan stock, spesifikasi lebih lanjut, dan penawaran harga resminya.\nTerima kasih.`;
     window.open(getWhatsAppLink(waNumber, text), '_blank');
   };

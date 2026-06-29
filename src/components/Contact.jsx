@@ -31,7 +31,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const waNumber = contact.whatsapp || '6281234567890';
+    const waNumber = contact.whatsapp || '6282131397759';
     const text = `Halo Admin PT Alfatih Anugrah Syariah,\nsaya ingin berkonsultasi mengenai pengadaan elektronik.\n\n*Nama:* ${formData.name}\n*Instansi/UMKM:* ${formData.institution}\n*Email:* ${formData.email}\n*No. HP:* ${formData.phone}\n*Pesan:* ${formData.message}`;
     
     window.open(getWhatsAppLink(waNumber, text), '_blank');
@@ -146,7 +146,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Contoh: Zaky Al-Fatih"
+                    placeholder="Contoh: Budi Santoso"
                     className="w-full px-4 py-3 border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-100 rounded-xl text-sm outline-none transition-all placeholder-slate-400 font-semibold"
                   />
                 </div>
