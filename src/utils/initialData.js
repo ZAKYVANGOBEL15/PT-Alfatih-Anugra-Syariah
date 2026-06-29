@@ -181,7 +181,7 @@ const defaultFaqs = [
 const defaultContact = {
   whatsapp: '6282131397759',
   email: 'admin@alfatih-syariah.com',
-  address: 'Jl. Ahmad Yani No. 45, Kecamatan Sario, Kota Manado, Sulawesi Utara',
+  address: 'Jl. Gatot Subroto, Molinow, Kec. Kotamobagu Bar., Kota Kotamobagu, Sulawesi Utara 95716',
   mapsEmbedUrl: 'https://maps.google.com/maps?q=PT.+Alfatih+Anugrah+Syariah&output=embed&z=17',
   operationalHours: 'Senin - Sabtu (08:00 - 17:00 WITA)'
 };
@@ -202,9 +202,9 @@ export const initStorage = () => {
     localStorage.setItem('alfatih_projects', JSON.stringify(defaultProjects));
   }
 
-  // Force update contact if number or maps URL is outdated
+  // Force update contact if number, maps URL, or address is outdated
   const currentContactStr = localStorage.getItem('alfatih_contact');
-  if (!currentContactStr || !currentContactStr.includes('6282131397759') || !currentContactStr.includes('alfatih+Anugrah')) {
+  if (!currentContactStr || !currentContactStr.includes('6282131397759') || !currentContactStr.includes('Kotamobagu')) {
     localStorage.setItem('alfatih_contact', JSON.stringify(defaultContact));
   }
 
