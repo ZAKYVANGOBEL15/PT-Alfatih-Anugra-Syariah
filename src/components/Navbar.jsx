@@ -86,7 +86,7 @@ export default function Navbar() {
                   PT ALFATIH
                 </span>
                 <span className={`text-[10px] uppercase tracking-widest font-semibold block leading-none drop-shadow-sm ${isScrolled ? 'text-slate-500' : 'text-slate-200'}`}>
-                  Anugra Syariah
+                  Anugrah Syariah
                 </span>
               </div>
             </div>

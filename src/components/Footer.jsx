@@ -35,7 +35,7 @@ export default function Footer() {
                   PT ALFATIH
                 </span>
                 <span className="text-[10px] text-slate-400 uppercase tracking-widest font-semibold block leading-none">
-                  Anugra Syariah
+                  Anugrah Syariah
                 </span>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-semibold">
           <p>
-            &copy; {currentYear} PT Alfatih Anugra Syariah. All rights reserved.
+            &copy; {currentYear} PT Alfatih Anugrah Syariah. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             {/* Admin link removed temporarily */}

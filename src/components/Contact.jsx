@@ -32,7 +32,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const waNumber = contact.whatsapp || '6281234567890';
-    const text = `Halo Admin PT Alfatih Anugra Syariah,\nsaya ingin berkonsultasi mengenai pengadaan elektronik.\n\n*Nama:* ${formData.name}\n*Instansi/UMKM:* ${formData.institution}\n*Email:* ${formData.email}\n*No. HP:* ${formData.phone}\n*Pesan:* ${formData.message}`;
+    const text = `Halo Admin PT Alfatih Anugrah Syariah,\nsaya ingin berkonsultasi mengenai pengadaan elektronik.\n\n*Nama:* ${formData.name}\n*Instansi/UMKM:* ${formData.institution}\n*Email:* ${formData.email}\n*No. HP:* ${formData.phone}\n*Pesan:* ${formData.message}`;
     
     window.open(getWhatsAppLink(waNumber, text), '_blank');
   };
@@ -116,7 +116,7 @@ export default function Contact() {
             {/* Google Maps Iframe */}
             <div className="rounded-2xl border border-slate-200 shadow-sm overflow-hidden h-[240px] bg-slate-200">
               <iframe
-                title="Google Maps Location PT Alfatih Anugra Syariah"
+                title="Google Maps Location PT Alfatih Anugrah Syariah"
                 src={contact.mapsEmbedUrl}
                 width="100%"
                 height="100%"

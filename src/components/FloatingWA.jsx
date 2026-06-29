@@ -17,7 +17,7 @@ export default function FloatingWA() {
 
   const handleClick = () => {
     const waNumber = contact.whatsapp || '6281234567890';
-    const text = 'Halo Admin PT Alfatih Anugra Syariah,\nsaya berkunjung ke website Anda dan ingin menanyakan tentang pengadaan barang elektronik.';
+    const text = 'Halo Admin PT Alfatih Anugrah Syariah,\nsaya berkunjung ke website Anda dan ingin menanyakan tentang pengadaan barang elektronik.';
     window.open(getWhatsAppLink(waNumber, text), '_blank');
   };
 

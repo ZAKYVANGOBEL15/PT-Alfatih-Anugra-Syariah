@@ -39,7 +39,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
           <div className="lg:col-span-6 space-y-6">
             <h3 className="text-2xl font-bold text-slate-900 leading-tight">
-              PT Alfatih Anugra Syariah
+              PT Alfatih Anugrah Syariah
             </h3>
             <p className="text-slate-600 leading-relaxed font-medium">
               Didirikan sebagai bentuk komitmen dalam memfasilitasi kebutuhan pengadaan barang elektronik berkualitas tinggi dan terstandarisasi. Kami hadir sebagai solusi untuk instansi pemerintah, BUMN, lembaga pendidikan, rumah sakit, perkantoran, dan UMKM di seluruh wilayah Indonesia.

@@ -95,7 +95,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto mb-10 font-normal leading-relaxed drop-shadow-sm"
             >
-              PT Alfatih Anugra Syariah menyediakan laptop, komputer, CCTV, perangkat jaringan, dan peralatan kantor berkualitas (tersedia unit baru bergaransi resmi maupun barang second/bekas layak pakai) untuk instansi pemerintah, BUMN, sekolah, kampus, dan swasta.
+              PT Alfatih Anugrah Syariah menyediakan laptop, komputer, CCTV, perangkat jaringan, dan peralatan kantor berkualitas (tersedia unit baru bergaransi resmi maupun barang second/bekas layak pakai) untuk instansi pemerintah, BUMN, sekolah, kampus, dan swasta.
             </motion.p>
 
             {/* CTAs */}

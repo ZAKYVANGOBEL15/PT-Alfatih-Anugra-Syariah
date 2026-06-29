@@ -32,7 +32,7 @@ export default function Login() {
             <Building2 className="w-8 h-8" />
           </div>
           <h1 className="text-2xl font-extrabold text-white tracking-tight leading-tight">
-            PT ALFATIH ANUGRA SYARIAH
+            PT ALFATIH Anugrah Syariah
           </h1>
           <p className="text-xs text-slate-450 font-semibold uppercase tracking-widest mt-1.5">
             Portal Administrasi Database

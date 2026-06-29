@@ -138,7 +138,7 @@ const defaultTestimonials = [
     name: 'Rian Hidayat',
     role: 'IT Manager',
     company: 'PT Global Solusindo',
-    content: 'Sangat terbantu dengan layanan konsultasi jaringan dari PT Alfatih Anugra Syariah. Produk Ruijie router dan switch yang disuplai bergaransi resmi and harganya sangat bersaing.',
+    content: 'Sangat terbantu dengan layanan konsultasi jaringan dari PT Alfatih Anugrah Syariah. Produk Ruijie router dan switch yang disuplai bergaransi resmi and harganya sangat bersaing.',
     rating: 5
   },
   {
