@@ -77,10 +77,7 @@ export default function Footer() {
             &copy; {currentYear} PT Alfatih Anugra Syariah. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link to="/admin/login" className="flex items-center gap-1 hover:text-primary-400 transition-colors">
-              <ShieldAlert className="w-3.5 h-3.5" />
-              <span>Portal Admin</span>
-            </Link>
+            {/* Admin link removed temporarily */}
           </div>
         </div>
       </div>
