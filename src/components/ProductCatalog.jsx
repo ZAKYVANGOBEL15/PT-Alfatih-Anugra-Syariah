@@ -51,13 +51,13 @@ export default function ProductCatalog() {
         
         {/* Title Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-sm font-bold tracking-wider text-primary-600 uppercase">Katalog Produk</span>
+          <span className="text-sm font-bold tracking-wider text-primary-600 uppercase">Katalog Produk & Layanan</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mt-2 mb-4">
-            Peralatan Elektronik Pilihan
+            Produk & Layanan Pilihan
           </h2>
           <div className="h-1.5 w-20 bg-gradient-to-r from-primary-600 to-indigo-600 mx-auto rounded-full" />
           <p className="text-slate-500 mt-4 text-sm sm:text-base font-medium">
-            Temukan berbagai macam pilihan produk IT dan elektronik original bergaransi resmi untuk menunjang aktivitas operasional instansi Anda.
+            Temukan berbagai macam pilihan produk IT, elektronik original bergaransi resmi, serta layanan profesional terbaik untuk instansi Anda.
           </p>
         </div>
 

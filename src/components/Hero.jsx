@@ -5,9 +5,7 @@ import { ShoppingBag, MessageSquare, ArrowRight, CheckCircle2 } from 'lucide-rea
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const heroImages = [
-    '/image/Banner-Slide1.jpg',
-    '/image/Banner-Slide2.jpg',
-    '/image/Banner-Slide3.jpg'
+    '/image/Banner-Slide1.jpg'
   ];
 
   useEffect(() => {

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero';
 import About from '../components/About';
+import Workflow from '../components/Workflow';
 import Services from '../components/Services';
 import ProductCatalog from '../components/ProductCatalog';
 import Projects from '../components/Projects';
@@ -43,6 +44,7 @@ export default function LandingPage() {
     <div className="relative">
       <Hero />
       <About />
+      <Workflow />
       <Services />
       <ProductCatalog />
       <Projects />

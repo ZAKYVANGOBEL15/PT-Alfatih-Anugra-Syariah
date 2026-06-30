@@ -5,7 +5,8 @@ const defaultCategories = [
   { id: '2', name: 'Printer & Scanner', slug: 'printer-scanner' },
   { id: '3', name: 'CCTV & Keamanan', slug: 'cctv-keamanan' },
   { id: '4', name: 'Jaringan & Server', slug: 'jaringan-server' },
-  { id: '5', name: 'Peralatan Kantor', slug: 'peralatan-kantor'  }
+  { id: '5', name: 'Peralatan Kantor', slug: 'peralatan-kantor'  },
+  { id: '6', name: 'Jasa Event Organizer (EO)', slug: 'jasa-eo' }
 ];
 
 const defaultProducts = [
@@ -24,11 +25,9 @@ const defaultProducts = [
       { key: 'Sistem Operasi', value: 'Windows 11 Pro' },
       { key: 'Garansi', value: '2 Tahun Garansi Resmi ASUS Indonesia' }
     ],
-    image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80',
+    image: '/image/Asus ExpertBook.webp',
     gallery: [
-      'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80'
+      '/image/Asus ExpertBook.webp'
     ],
     status: 'Tersedia'
   },
@@ -49,8 +48,7 @@ const defaultProducts = [
     ],
     image: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80'
+      'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80'
     ],
     status: 'Tersedia'
   },
@@ -68,9 +66,9 @@ const defaultProducts = [
       { key: 'Resolusi Scan', value: '600 x 1200 dpi' },
       { key: 'Tipe Tinta', value: 'Epson 003 Bottle Ink' }
     ],
-    image: 'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80',
+    image: '/image/Epson.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80'
+      '/image/Epson.jpg'
     ],
     status: 'Tersedia'
   },
@@ -92,6 +90,24 @@ const defaultProducts = [
     gallery: [
       'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=80',
       'https://images.unsplash.com/photo-1525824236856-8d0431dba3ab?auto=format&fit=crop&w=600&q=80'
+    ],
+    status: 'Tersedia'
+  },
+  {
+    id: 'prod-5',
+    name: 'Jasa Event Organizer (EO)',
+    category: 'jasa-eo',
+    description: 'Penyelenggaraan acara profesional seperti Paket Meeting, Paket Studi Tiru se-Indonesia, dan Paket Family Gathering.',
+    details: 'Kami mengorganisir berbagai jenis acara instansi pemerintah, BUMN, sekolah, maupun swasta secara profesional. Tim EO kami yang berpengalaman mengawal seluruh tahapan mulai dari perencanaan konsep, manajemen anggaran, koordinasi vendor, registrasi peserta, pelaksanaan teknis, hingga pelaporan pertanggungjawaban akhir.',
+    specifications: [
+      { key: 'Paket Meeting', value: 'Fullboard, Fullday, Halfday' },
+      { key: 'Paket Studi Tiru', value: 'Kunjungan Kerja & Studi Banding Se-Indonesia' },
+      { key: 'Paket Family Gathering', value: 'Outbound, Fun Games, Akomodasi & Capacity Building' }
+    ],
+    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80'
     ],
     status: 'Tersedia'
   }
@@ -190,10 +206,19 @@ const defaultContact = {
 export const initStorage = () => {
   if (typeof window === 'undefined') return;
 
-  // Force update stored products if they still contain the deleted items
+  // Force update stored products if they still contain the deleted items, don't have Jasa EO, or use old image paths
   const currentProductsStr = localStorage.getItem('alfatih_products');
-  if (currentProductsStr && (currentProductsStr.includes('Ruijie') || currentProductsStr.includes('Interactive Whiteboard'))) {
+  if (
+    currentProductsStr && 
+    (currentProductsStr.includes('Ruijie') || 
+     currentProductsStr.includes('Interactive Whiteboard') ||
+     !currentProductsStr.includes('Jasa Event Organizer') ||
+     !currentProductsStr.includes('/image/Asus ExpertBook.webp') ||
+     !currentProductsStr.includes('/image/Epson.jpg') ||
+     currentProductsStr.includes('photo-1593642632823-8f785ba67e45'))
+  ) {
     localStorage.setItem('alfatih_products', JSON.stringify(defaultProducts));
+    localStorage.setItem('alfatih_categories', JSON.stringify(defaultCategories));
   }
 
   // Force update stored projects if they are the old template images or old detailed titles
